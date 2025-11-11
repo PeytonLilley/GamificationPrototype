@@ -1,0 +1,38 @@
+﻿title: Interaction1
+---
+Player: Hi! How can I help you?
+NPC 1: I'm looking for a book to read on vacation, what do you recommend?
+-> Here's a long, boring textbook.
+	NPC 1: Um... okay? I think I'm gonna go now...
+	<<jump Change>>
+-> Here's a fun romance novel.
+	NPC 1: That sound great!
+	<<jump Change>>
+===
+
+title: Change
+---
+Player: Have a nice day!
+<<change CharacterChanger>>
+<<jump NPC2>>
+===
+
+title: NPC2
+---
+Player: Welcome!
+NPC 2: Yeah, hi.
+Player: Can I help you find anything today?
+NPC 2: Just looking.
+-> Okay, have fun.
+	NPC 2: Bye.
+	<<jump End>>
+-> Okay, let me know if you need anything.
+	NPC2: Actually... maybe you can help. Here's my story.
+	<<jump End>>
+===
+
+title: End
+---
+The end!
+===
+
