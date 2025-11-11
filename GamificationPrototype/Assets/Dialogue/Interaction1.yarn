@@ -6,7 +6,7 @@ NPC 1: I'm looking for a book to read on vacation, what do you recommend?
 	NPC 1: Um... okay? I think I'm gonna go now...
 	<<jump Change>>
 -> Here's a fun romance novel.
-	NPC 1: That sound great!
+	NPC 1: That sounds great!
 	<<jump Change>>
 ===
 
